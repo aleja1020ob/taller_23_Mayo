@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    /*quenerar un amagerne de 0*/
+    padding: 0;
+    /*Genera un margen interior de  0*/
+    text-decoration: none;
+    /*le quita decoraciones a cualquie tipo de texto*/
+    list-style: none;
+    /*le quita estiilos a las lista como : el colo azul subrayado*/
+    font-family: sans-serif;
+    /*Se escoge la fuente de lentra que se quiere manejar en todo la pagina */
+}
+header{
+    position:relative;
+    /*el "header" los que hace con esta propeda es colocarce en pocion relativa a su medida*/
+    margin: 0 auto;
+    /*lo que esta haciendo es que no hay margin en esta propiedad y el "auto lo que hace es: que el espacio que sobre lo reparta en valores iguales"*/
+    width: 1000px;
+    /*le da un ancho de 1000 pixeles*/
+    height: 150px;
+    /*le da una altura de 150 pixeles*/
+    background: silver;
+    /*colorea */
+
+}
+#MenuTop{
+    position: absolute;
+     /*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano, */
+    bottom: 0;
+     /*quitandole estilos en la parte superior  */
+    width: 1000px;
+     /*anchura*/
+    height: 50px;
+     /*altura */
+    background-color: rgb(146, 18, 18);
+     /*colorea */
+}
+.nivel1{
+    text-align: center;
+    /* alineacion del teto en cente caso centrado*/
+    border: 4px solid #fff;
+    /* le esta dando un bode solido  de 4 pixeles*/
+    background: linear-gradient(#900,#600);
+    /* colorea la propiedad*/
+    float: left;
+    /*ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado*/
+    width: 19.2%;
+    /*anchura*/
+    line-height: 42px;
+    /**/
+}
+.nivel1 a{
+    /* cuando pasa el curso rrealiza un operacion de color*/
+    color: #fff;
+    /* le da color a la letra*/
+}
+.nivel1:hover{
+    /* cuando pasa el curso rrealiza un operacion de color*/
+    background: purple;
+    /*colorea el elemento*/
+}
+.nivel2{
+    /**/
+    position: relative;
+    /*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano, */
+    width: 100%;
+    /*anchura del elemento*/
+    text-align: center;
+    /*aliniea texto*/
+    line-height: 42px;
+    /**/
+    background: silver;
+    /*colorea elemento*/
+    color: black;
+    /*darle color a la aletra*/
+    border-top: 4px solid #FFF;
+    /*borde en la parte superior */
+    border-left: 4px solid #fff;
+    /*le da bode derecho*/
+    border-right: 4px solid #fff;
+    /* le da bode izquierdo*/
+    left: -4px;
+    /**/
+}
+.nivel2:hover{
+    /* cuando pasa el curso rrealiza un operacion de color*/
+    background: rgb(68, 68, 223);
+    /*colorea el elemento */
+    transition: background .5s ease-out;
+    /*animar los cambios de las propiedades*/
+}
+#MenuTop ul li ul{
+   
+    display: none;
+    /*oculta un elemento, por lo que no ocupara ningún espacio*/
+}
+#MenuTop ul li:hover ul{
+    
+    display: block;
+    /*se declara que esun elemento en bloque */
+}
